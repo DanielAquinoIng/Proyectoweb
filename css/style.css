@@ -153,6 +153,51 @@ header::after{
     box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
     background-color: pink;
 }
-.cuest{     
-    text-align: center;
+
+/*Enfermedades más comunes en México*/
+
+.infoVideo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    padding: 30px;
 }
+
+.info{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 800px;
+    padding: 20px;   
+}
+
+.info2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 90px; 
+    margin-right: 90px; 
+}
+
+
+.bigbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    padding: 30px;
+}
+
+.infobox{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    width: 315px;
+    height: 425px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
