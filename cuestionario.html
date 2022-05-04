@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,23 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Cuestionario</title>
-    <style> form{
-      margin: 100px;
-      padding: 60px;
-      border: rgb(46, 0, 65) solid;
-      border-radius: 50px;
-      border-width: 0px;
-      box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
-      background-color: pink;
-     }
-     h1{
-       text-align: center;
-     }
-   </style>
 </head>
 
 <body style="background-color: #ffe5ff">
     <header>
+      <!--Menu-->
         <div class="container">
             <h1 class="logo">Logo <span>Empresa</span></h1>
         </div>
@@ -47,8 +34,9 @@
         </div>
     </header>
     <script src="js/app.js"></script>
-    <div >
-      <form>
+    <!--Form-->
+    <div>
+      <form class="form">
         <h1>Cuestionario</h1> 
         <br>
         <!--Selección de Género, pregunta 1-->
@@ -167,174 +155,4 @@
 
     
 
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Cuestionario</title>
-    <style> form{
-      margin: 100px;
-      padding: 60px;
-      border: rgb(46, 0, 65) solid;
-      border-radius: 50px;
-      border-width: 0px;
-      box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
-      background-color: pink;
-     }
-     h1{
-       text-align: center;
-     }
-   </style>
-</head>
-
-<body style="background-color: #ffe5ff">
-    <header>
-        <div class="container">
-            <h1 class="logo">Logo <span>Empresa</span></h1>
-        </div>
-        <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="#">Catalogo</a></li>
-                <li><a href="#">Tratamientos</a></li>
-                <li><a href="cuestionario.html">Cuestionario</a></li>
-                <li><a href="#">Estadisticas</a></li>
-            </ul>
-        </nav>
-        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
-            <div class="hamburger">
-            </div>
-        </div>
-    </header>
-    <script src="js/app.js"></script>
-    <div >
-      <form>
-        <h1>Cuestionario</h1> 
-        <br>
-        <!--Selección de Género, pregunta 1-->
-        <h4>Género</h4>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio" id="Radios1" value="option1">
-          <label class="form-check-label" for="Radios1">
-            Masculino
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio" id="Radios2" value="option2">
-          <label class="form-check-label" for="Radios2">
-            Femenino
-          </label>
-        </div>
-        <br>
-        <!--Activo, pregunta 2-->
-        <h4>¿Eres sexualmente activo?</h4>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio2" id="Radios3" value="option3">
-          <label class="form-check-label" for="Radios3">
-            Si
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio2" id="Radios4" value="option4">
-          <label class="form-check-label" for="Radios4">
-            No
-          </label>
-        </div>
-        <br>
-        <!--Síntomas, pregunta 3-->
-        <div class="form-control1">
-          <h4 for="opcionesSintomas">Síntomas</h4>
-          <select class="form-control" id="pregunta3">
-            <option>Dolor</option>
-            <option>Sangrado</option>
-            <option>Inflamación</option>
-            <option>Ronchas</option>
-            <option>Flujo</option>
-            <option>Llagas</option>
-            <option>Verrugas</option>
-            <option>Picazón</option>
-            <option>Problemas al orinar</option>
-          </select>
-         </div>
-         <br>
-         <!--Parejas Sexuales, pregunta 4-->
-        <h4>¿Ha tenido relaciones sexuales en los últimos 6 meses?</h4>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio3" id="Radios5" value="option5">
-          <label class="form-check-label" for="Radios5">
-            Si
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio3" id="Radios6" value="option6">
-          <label class="form-check-label" for="Radios6">
-            No
-          </label>
-        </div>
-        <br>
-        <!--Numero de parejas, pregunta 5-->
-        <div class="form-control2">
-          <h4 for="opcionesParejas">¿Con cuantas personas?</h4>
-          <select class="form-control" id="pregunta5">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>Más de 10</option>
-          </select>
-         </div>
-         <br>
-         <!--Uso de condon, pregunta 6-->
-        <div class="form-control3">
-          <h4 for="opcionesCondon">¿Usa condón con parejas nuevas ó parejas ocasionales?</h4>
-          <select class="form-control" id="pregunta6">
-            <option>Siempre</option>
-            <option>Casi Siempre</option>
-            <option>A veces</option>
-            <option>Raramente</option>
-            <option>Nunca</option>
-          </select>
-         </div>
-         <br>
-          <!--Vacuna, pregunta 7-->
-        <h4>¿Se ha puesto la vacuna de la Hepatitis B?</h4>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio4" id="Radios7" value="option7">
-          <label class="form-check-label" for="Radios7">
-            Si
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Radio4" id="Radios8" value="option8">
-          <label class="form-check-label" for="Radios8">
-            No
-          </label>
-        </div>
-        <br>
-        
-        <!--Boton-->
-        <input type="button" value="Enviar" onclick="Mensaje('Gracias por contestar');">
-      </form>
-    </div>
-</body>
-
-
-    
-
->>>>>>> a3789fd736de91c9bcc0f9088cf13177920924bd
 </html>
