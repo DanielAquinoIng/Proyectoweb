@@ -153,6 +153,7 @@ margin-left: 10px;
 .Cuerpo{
     align-items: center;
     text-align: center;
+    padding-top: 5%;
 
 }
  
@@ -171,4 +172,90 @@ margin-left: 10px;
     border-width: 0px;
     box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
     background-color: pink;
+}
+/*Enfermedades más comunes en México*/
+.infoVideo{
+    align-items: center;
+    /* padding-left: 15%;  */
+    margin: auto; 
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+     /* margin: 50px;
+    padding: 30px; */
+
+}
+
+.video{
+    padding-top: 80px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+
+}
+
+.info{
+    /* margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 800px;
+    padding: 20px;  */
+    align-items: center;  
+}
+
+.info2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 90px; 
+    margin-right: 90px; 
+}
+
+
+.bigbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    padding: 30px;
+}
+
+.infobox{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 315px;
+    height: 425px;
+    background-color: white;
+    border-radius: 4px;
+    border-radius: 50px;
+    border-width: 0px;
+    box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
+}
+/*Tratamientos*/
+.box{
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.boximg{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 50px;
+    border-width: 0px;
+    box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
+}
+
+.boxinf{
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
 }
