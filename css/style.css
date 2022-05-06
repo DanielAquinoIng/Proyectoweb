@@ -13,7 +13,10 @@ header{
     background: #9b009e;
     color: #ffffff;
     padding: 1em 0;
-    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 header::after{
