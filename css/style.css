@@ -1,5 +1,5 @@
 body{
-    background: #ffe5ff;
+    background: #ffe6e9;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -9,7 +9,8 @@ body{
     margin: 0 auto;
 }
 header{
-    background: #9b009e;
+    /* background: #9b009e; */
+    background: #c25d72;
     color: #ffffff;
     padding: 1em 0;
     width: 100%;
@@ -37,7 +38,8 @@ header::after{
     top:100%;
     right:0;
     position: absolute;
-    background: #9b009e;
+    /* background: #9b009e; */
+    background: #c25d72;
     clip-path: circle(0px at top right);
     transition: clip-path ease-in-out 400ms;
 }
@@ -64,7 +66,7 @@ header::after{
 }
 .site-nav a:hover,
 .site-nav a:focus{
-    background: #ffc6fc;
+    background: #ffe6e9;
     color: #000000;
 }
 
@@ -171,7 +173,7 @@ margin-left: 10px;
     border-radius: 50px;
     border-width: 0px;
     box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);
-    background-color: pink;
+    background-color: #f99aaa;
 }
 /*Enfermedades más comunes en México*/
 .infoVideo{
