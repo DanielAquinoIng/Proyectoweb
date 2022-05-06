@@ -17,17 +17,30 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <title>Estadísticas</title>
+  <!--Estilo de controles de carousel y estilos de tabla-->
   <style>
-    .carrousel-inner img {
-      width: 100%;
-      height: 100%;
-    }
-
     .carousel-indicators li {
       width: 20px;
       height: 20px;
       border-radius: 50%;
       background-color: blueviolet;
+    }
+    table {
+      font-family: arial, sans-serif;
+      font-size: 14px;
+    }
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    tr:nth-child(n) {
+      background-color: white;
+    }
+    
+    tr:nth-child(2n)
+    {
+      background-color: lightblue;
     }
   </style>
 </head>
@@ -58,7 +71,7 @@
     <img src="images/estadistica.png" alt="Doctora" style="height: 15%; width: 15%; ">
   </div>
   <!--Carousel-->
-  <div id="Estadisticas" class="carousel slide" data-ride="carousel" data-slide="next">
+  <div id="Estadisticas" class="carousel slide" data-ride="carousel">
 
     <!-- Indicadores -->
     <ul class="carousel-indicators">
@@ -69,8 +82,8 @@
       <li data-target="#Estadisticas" data-slide-to="4"></li>
     </ul>
 
-    <!-- Elementos visuales(Estadisticas) del carrousel -->
-    <div class="carousel-inner" style="margin-top: 30px;text-align: center;">
+    <!-- Elementos visuales(Estadisticas) del carrousel y cambio automatica de elementos visuales-->
+    <div class="carousel-inner" style="margin-top: 30px;text-align: center;"  data-slide="next">
       <div class="carousel-item active">
         <img src="images/ITS_33_2021.jpg" alt="Un asunto de responsabilidad" width="1100px" height="500px">
       </div>
@@ -88,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="containerprin" style="text-align:justify ;">
+  <div class="containerprin" style="text-align:justify ; ">
     <h1>Magnitud del problema</h1>
     <p>
       Las ITS tienen efectos profundos en la salud sexual y reproductiva en todo el mundo.
@@ -119,7 +132,256 @@
     <div style="text-align: center;">
       <img src="images/infeciones.jpg" alt="Infecciones de Transmisión Sexual (ITS)"
         style="width: 50%; border-radius: 30px; box-shadow: 10px 20px 15px 3px rgba(0, 0, 0, 0.397);"></div>
+    <!--Titulo Tabla-->
+    <br><br><h2>Proporción detecciones positivas a VIH por grupo de población, 2010-2021. México</h2>
+    <!--Tabla y elementos de tabla-->
+    <table>
+      <tr style="background-color: lightblue;">
+        <th rowspan="2">Unidades medicas/especializado</th>
+        <th colspan="12">Nacional VIH<br>Porcentaje de pruebas para detección del VIH positivas</th>
+      </tr>
+      <tr>
+        <th>2010</th>
+        <th>2011</th> 
+        <th>2012</th> 
+        <th>2013</th> 
+        <th>2014</th> 
+        <th>2015</th> 
+        <th>2016</th>
+        <th>2017</th> 
+        <th>2018</th> 
+        <th>2019</th>
+        <th>2020</th>
+        <th>2021</th>
+      </tr>
+      <tr>
+        <th>Detecciones en capasits y SAIH</th>
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Hombres Heterosexuales</th>
+        <td>5.2</td> 
+        <td>4.5</td> 
+        <td>6.8</td> 
+        <td>1.6</td> 
+        <td>4.3</td> 
+        <td>2.5</td>
+        <td>2.6</td>
+        <td>3.1</td> 
+        <td>3.2</td> 
+        <td>2.9</td>
+        <td>5.5</td>
+        <td>6.48</td>
+      </tr>
+      <tr>
+        <th>Mujeres Heterosexuales</th>
+        <td>3.2</td> 
+        <td>2.9</td> 
+        <td>2.7</td> 
+        <td>1.9</td> 
+        <td>1.8</td> 
+        <td>1.1</td>
+        <td>1.5</td> 
+        <td>1.6</td> 
+        <td>1.6</td>
+        <td>1.4</td>
+        <td>2.5</td>
+        <td>2.65</td>
+      </tr>
+      <tr>
+        <th>Mujeres embarazadas</th>
+        <td>0.5</td> 
+        <td>0.6</td> 
+        <td>0.7</td> 
+        <td>0.7</td> 
+        <td>0.7</td> 
+        <td>0.3</td>
+        <td>0.7</td>
+        <td>4.1</td> 
+        <td>3.0</td> 
+        <td>1.8</td>
+        <td>1.2</td>
+        <td>1.36</td>
+      </tr>
+      <tr>
+        <th>Hombres que tienen sexo con hombres</th>
+        <td>18.6</td> 
+        <td>15.4</td> 
+        <td>18.8</td> 
+        <td>16.9</td> 
+        <td>13.2</td> 
+        <td>12.1</td>
+        <td>12.1</td>
+        <td>11.9</td> 
+        <td>12.2</td> 
+        <td>11.4</td>
+        <td>13.7</td>
+        <td>14.97</td>
+      </tr>
+      <tr>
+        <th>Hombres Trabajadores Sexuales</th>
+        <td>6.4</td> 
+        <td>3.6</td> 
+        <td>1.7</td> 
+        <td>5.5</td> 
+        <td>2.1</td> 
+        <td>2.9</td>
+        <td>2.3</td>
+        <td>5</td> 
+        <td>5.2</td> 
+        <td>4.3</td>
+        <td>5.8</td>
+        <td>6.21</td>
+      </tr>
+      <tr>
+        <th>Mujeres Trabajadores Sexuales</th>
+        <td>0.8</td> 
+        <td>0.4</td> 
+        <td>0.9</td> 
+        <td>0.4</td> 
+        <td>0.8</td> 
+        <td>0.4</td>
+        <td>1.6</td>
+        <td>0.7</td> 
+        <td>0.4</td> 
+        <td>0.5</td>
+        <td>0.6</td>
+        <td>0.61</td>
+      </tr>
+      <tr>
+        <th>Personas que se inyectan drogas</th>
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td>38.6</td> 
+        <td>48.8</td>
+        <td>3.2</td>
+        <td>1</td> 
+        <td>1.7</td> 
+        <td>2.9</td>
+        <td>3.5</td>
+        <td>3.10</td>
+      </tr>
+      <tr>
+        <th>Población TTTI</th>
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td>3.4</td>
+        <td>5</td> 
+        <td>8.6</td> 
+        <td>4.7</td>
+        <td>8.4</td>
+        <td>8.35</td>
+      </tr>
+      <tr>
+        <th>Detecciones en otras unidades médicas</th>
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Hombres</th>
+        <td>3.6</td> 
+        <td>5.1</td> 
+        <td>3.2</td> 
+        <td>2.5</td> 
+        <td>2.5</td> 
+        <td>2.3</td>
+        <td>1.8</td>
+        <td>1.7</td> 
+        <td>2</td> 
+        <td>1.2</td>
+        <td>2</td>
+        <td>1.99</td>
+      </tr>
+      <tr>
+        <th>Mujeres</th>
+        <td>0.7</td> 
+        <td>0.5</td> 
+        <td>0.9</td> 
+        <td>0.3</td> 
+        <td>0.4</td> 
+        <td>0.3</td>
+        <td>0.3</td>
+        <td>0.3</td> 
+        <td>0.3</td> 
+        <td>0.3</td>
+        <td>0.5</td>
+        <td>0.53</td>
+      </tr>
+      <tr>
+        <th>Mujeres embarazadas</th>
+        <td>0.3</td> 
+        <td>0.2</td> 
+        <td>0.2</td> 
+        <td>0.2</td> 
+        <td>0.3</td> 
+        <td>0.2</td>
+        <td>0.4</td>
+        <td>0.1</td> 
+        <td>0.3</td> 
+        <td>0.2</td>
+        <td>0.8</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Todas las unidades</th>
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Mujeres embarazadas</th>
+        <td>0.3</td> 
+        <td>0.2</td> 
+        <td>0.2</td> 
+        <td>0.2</td> 
+        <td>0.3</td> 
+        <td>0.2</td>
+        <td>0.4</td>
+        <td>0.3</td> 
+        <td>0.4</td> 
+        <td>0.3</td>
+        <td>0.9</td>
+        <td>0.48</td>
+      </tr>
+    </table>
+    <p>Fuente: SS/DGIS. Consolidado SINBA- PLIISA. Detecciones de VIH realizadas por el Programa Nacional de VIH, SIDA e
+      ITS. Datos preliminares 2020 y acumulado a octubre 2021
+    </p>
 </body>
-</div>
-
 </html>
